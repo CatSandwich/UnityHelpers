@@ -38,5 +38,5 @@ public class HoverHighlight : MonoBehaviour
 
     private void OnMouseOver() => _line.enabled = true;
     private void OnMouseExit() => _line.enabled = false;
-    private Vector3 _localToWorld(Vector2 v2) => (Vector3) (v2 * transform.localScale) + transform.position;
+    private Vector3 _localToWorld(Vector2 v2) => (Vector3) (v2 * transform.lossyScale) + transform.position;
 }

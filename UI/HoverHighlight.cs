@@ -1,6 +1,8 @@
 using System.Linq;
 using UnityEngine;
 
+// NOTE: THIS WILL HIGHLIGHT ACCORDING TO THE POLYGON COLLIDER. IF THE SHAPE IS OFF, YOU MUST MANUALLY EDIT THE COLLIDER POINTS.
+
 /// <summary>
 /// Highlights a sprite on mouse over. Find or adds a LineRenderer and PolygonCollider2D for use on the GameObject.
 /// </summary>

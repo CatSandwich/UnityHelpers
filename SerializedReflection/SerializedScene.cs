@@ -1,12 +1,12 @@
 [Serializable]
-public class SerializableScene
+public class SerializedScene
 {
     public Scene Scene => UnityEngine.SceneManagement.SceneManager.GetSceneByName(_scene);
     [SerializeField] private string _scene;
 }
 
-[CustomPropertyDrawer(typeof(SerializableScene))]
-public class SerializableSceneDrawer : PropertyDrawer
+[CustomPropertyDrawer(typeof(SerializedScene))]
+public class SerializedSceneDrawer : PropertyDrawer
 {
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {

@@ -21,7 +21,7 @@ namespace CatSandwich
         // Set
         public SerializedFloat Set(float val) 
         {
-            PlayerPrefs.SetFloat(_key, val);
+            PlayerPrefs.SetFloat(_key, (_cached = val).Value);
             return this;
         }
 
@@ -47,7 +47,7 @@ namespace CatSandwich
         // Set
         public SerializedInt Set(int i)
         {
-            PlayerPrefs.SetInt(_key, i);
+            PlayerPrefs.SetInt(_key, (_cached = i).Value);
             return this;
         }
 
